@@ -1,0 +1,147 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 80px;
+    /* position: fixed; */
+    width: 100%;
+    background: #34495e;
+    /* padding: 0; */
+}
+
+nav p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 0 25px;
+    line-height: 80px;
+}
+
+.logo{
+    position: relative;
+    top: -12px;
+}
+
+nav ul{
+    float: right;
+    /* justify-content: space-between; */
+    /* margin-right: 40px; */
+    /* margin-left: 50px; */
+   
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+nav a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a.active, a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+#popup{
+    color:white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-bottom: 11px;
+    display: none;
+    cursor: pointer;
+}
+
+.footer_button{
+    height: 40px;
+    width: 35px;
+}
+
+.color{
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.color1{
+    color: white;
+    background-color: black;
+    
+}
+
+.font-color{
+    color: red;
+    border-bottom: 1px solid red;
+    width: 200px;
+}
+
+.color1:hover{
+    color: rgb(115, 113, 113);
+    text-decoration: underline;
+}
+
+.footer_center{
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
+}
+
+@media (max-width: 1220px){
+    #popup{
+        display: block;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        /* height: 100%;  */
+        background-color: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-wrap: wrap;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+        margin: 20px 12px;
+        
+    }
+
+  
+    li.active, a:hover{
+        border: none;
+        color: #34495e;
+    }
+    nav ul.show{
+        left: 0;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 1220px){
+    nav p{
+        font-size: 22px;
+        padding: 0 15px;
+        
+    }
+}
